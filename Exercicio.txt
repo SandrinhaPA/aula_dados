@@ -1,0 +1,37 @@
+Questão1_
+CREATE TABLE `sz-00006-ws.turma880.alunos_sandra` (
+  ID int64 not null,
+  Matricula string,
+  Nome string,
+  Estado string,
+  Formacao string
+)
+
+
+Questão2_
+alter table `sz-00006-ws.turma880.alunos_sandra` 
+rename column Estado to UF
+
+
+Questão3_
+alter table `sz-00006-ws.turma880.alunos_sandra` 
+add column Email string
+
+alter table `sz-00006-ws.turma880.alunos_sandra` 
+add column Telefone int64
+
+Questão4_
+alter table `sz-00006-ws.turma880.alunos_sandra` 
+drop column ID
+
+Questão5_
+drop table `sz-00006-ws.turma880.alunos_sandra` 
+
+Questão6_
+CREATE TABLE `sz-00006-ws.turma880.ups_sandra` (
+  UP string,
+  Cod_regiao int64 not null,
+  Fazenda string,
+  Nucleo string,
+  Cidade string
+)
